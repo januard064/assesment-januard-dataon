@@ -1,0 +1,10 @@
+.layoutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layoutContent {
+    width: 360px;
+    padding: 0px 16px;
+}
