@@ -57,8 +57,7 @@
 
 .feauteredContainer {
     position: relative;
-    margin-bottom: 80px;
-
+    margin-bottom: 100px;
 }
 
 
@@ -73,7 +72,7 @@
 .featuredCaption {
     width: 100%;
     position: absolute;
-    top: 20px;
+    top: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,11 +83,34 @@
     background: #FFFFFF;
     border-radius: 12px;
     padding: 21px;
-    margin-top: 60px;
 }
 
 .dataProfile {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+.captionAction {
+    border-top: 1px solid #78849E;
+    font-size: 12px;
+    color: #78849E;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+.flexStart {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }

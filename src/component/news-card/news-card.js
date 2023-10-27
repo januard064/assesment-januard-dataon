@@ -2,6 +2,10 @@ import React from "react"
 
 import styles from './news-card.module.css'
 
+import ShareIcon from "../icons/share-icon"
+import CommentIcon from "../icons/comment-icon"
+import LoveIcon from "../icons/love-icon"
+
 const NewsCard = (props) => {
 
     const { data, index } = props
@@ -29,6 +33,23 @@ const NewsCard = (props) => {
                             </div>
                             <div className={styles.captionDetail}>
                                 {data.text}
+                            </div>
+
+                            <div className={styles.captionAction}>
+                                <div className={styles.iconContainer}>
+                                    <ShareIcon />
+                                </div>
+                                <div className={styles.flexStart}>
+                                    <div className={styles.flexStart}>
+                                        <div style={{ marginRight: '8px' }}>{data.comment.length}</div>
+                                        <CommentIcon />
+                                    </div>
+                                    <div className={styles.flexStart} style={{ marginLeft: '24px' }}>
+                                        <div style={{ marginRight: '8px' }}>{data.loveCounter}</div>
+                                        <LoveIcon />
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>

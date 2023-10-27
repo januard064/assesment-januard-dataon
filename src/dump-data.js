@@ -4,9 +4,17 @@ export const DUMP_DATA = [
         imagePosition: 'right',
         avatarSrc: './images/user-avatar.png',
         userName: 'Adrien Stone',
-        text: 'We must believe that we are gifted for something, and that this thing, at whatever cost, must be attained.',
+        text: 'We must believe that we are gifted for something, and that this thing, at whatever cost, must be',
         newsDate: '18 Nov',
         comment: [
+            {
+                commentId: '',
+                commentText: '',
+            },
+            {
+                commentId: '',
+                commentText: '',
+            },
             {
                 commentId: '',
                 commentText: '',
