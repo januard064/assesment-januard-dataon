@@ -1,0 +1,14 @@
+.container {
+    position: fixed;
+    right: 32px;
+    bottom: 40px;
+}
+
+.button {
+    padding: 12px 32px;
+    background: #665EFF;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 12px;
+}
