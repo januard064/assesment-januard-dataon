@@ -4,7 +4,7 @@ export const DUMP_DATA = [
         imagePosition: 'right',
         avatarSrc: './images/user-avatar.png',
         userName: 'Adrien Stone',
-        text: 'We must believe that we are gifted for something, and that this thing, at whatever cost, must be',
+        text: 'We must believe that we are gifted for something, and that this thing, at whatever',
         newsDate: '18 Nov',
         comment: [
             {
