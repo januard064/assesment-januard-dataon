@@ -4,17 +4,16 @@ import styles from './news-card.module.css'
 
 const NewsCard = (props) => {
 
-    const { data } = props
+    const { data, index } = props
 
-    const { UserAvatar } = data.avatarSrc
 
     return (
         <div className={styles.cardContainer}
-            style={{ display: 'flex', justifyContent: data.imagePosition === 'left' ? 'flex-end' : '' }}
+            style={{ display: 'flex', justifyContent: index % 2 == 0 ? 'flex-end' : '' }}
         >
             <div>
                 <div className={styles.imageCaption}
-                    style={{ right: data.imagePosition === 'right' ? 0 : '', left: data.imagePosition === 'left' ? 0 : '' }}
+                    style={{ right: index % 2 == 0 ? '' : 0, left: index % 2 == 0 ? 0 : '' }}
                 >
                     <div className={styles.imageCaptionContent}>
                         <img alt={'image-caption'} src={data.imageSrc} className={styles.image} />
@@ -22,9 +21,9 @@ const NewsCard = (props) => {
                 </div>
 
                 <div className={styles.newsCaption} >
-                    <div className={styles.newsDetail} style={{ marginLeft: data.imagePosition === 'left' ? '70px' : '' }}>
+                    <div className={styles.newsDetail} style={{ marginLeft: index % 2 == 0 ? '70px' : '' }}>
                         {
-                            data.imagePosition === 'right' && (
+                            index % 2 !== 0 && (
                                 <div className={styles.imageContainer}>
                                     <img src={data.avatarSrc} alt="user-avatar" className={styles.image} />
                                 </div>
@@ -41,7 +40,7 @@ const NewsCard = (props) => {
                         </div>
 
                         {
-                            data.imagePosition === 'left' && (
+                            index % 2 == 0 && (
                                 <div className={styles.imageContainer}>
                                     <img src={data.avatarSrc} alt="user-avatar" className={styles.image} />
                                 </div>
