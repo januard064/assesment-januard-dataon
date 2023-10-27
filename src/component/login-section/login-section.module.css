@@ -59,3 +59,12 @@ input::placeholder {
     background-color: #665EFF;
     margin-top: 16px;
 }
+
+.errorMessage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-top: 12px;
+}
