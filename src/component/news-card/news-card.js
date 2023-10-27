@@ -57,8 +57,9 @@ const NewsCard = (props) => {
                                 }
 
                                 <div className={styles.profileSection}>
-                                    <div style={{ color: '#454F63', }}>{data.userName}</div>
+
                                     <div style={{ color: '#454F63', fontSize: '12px' }}>{data.newsDate}</div>
+                                    <div style={{ color: '#454F63', }}>{data.userName}</div>
 
                                     <div className={styles.captionDetail} style={{ width: '166px' }}>
                                         {data.text}
